@@ -1,0 +1,38 @@
+examples of 10 string functions
+--> 1-substr_replace 
+بتستخدم عشان نغير كلمة او حرف معين بحرف تاني
+و بتاخد 3 argu 
+اول واحد وهو الاسترينج ذات نفسه , بعديها الحرف الي عايز اغيره , بعديها الحرف الي هغير بيه
+--> 2-explode
+بتقسم الاسترينج بتاعي ل array of words
+--> 3-implode
+و دي عكس ال explode
+بتاخد مني array of words
+و بترجعلي استرينج كامل و ممكن افصل بينهم ب اي كاراكتر انا عايزه
+--> 4-addcslashes
+بتحط / قبل كل حرف انا بختاره "argu"
+--> 5-join
+concatenate any number of strings in array
+--> 6-similar_text
+بتقارن عدد الحروف الي زي بعض في 2 استرينج و بتقولك كام حرف متشابهة او ممكن تطلع نسبة التشابه بينهم بردو عن طريق
+similar_text($string_1,$string_2,$precent);
+echo $precent;
+--> 7-strpbrk
+بتاخد استرينج و بتاخد حرف 
+و بتشيل اي حاجة قبل اول حرف انت مختاره
+مثلا
+strpbrk("Hello World","l");
+output --> lo world 
+--> 8-strtr
+بتاخد 2 arguments
+اول واحد الاسترينج الي عايز تغير فيه و تاني واحد الحروف الي عايز تغيرها ف كل كلمة و بتمشي علي كل حرف و تشوف لو حرف ده فالاسترينج التاني بيتغير
+مثال
+echo strtr("Hilla Warld","ia","eo");
+output --> Hello World
+--> 9 -substr_compare
+بتقارن 2 استرينج ببعض لكن انا الي بحدد الانديكس من اول انهي حرف
+مثال
+echo substr_compare("Hel world","Hello world",3);
+output --> -1
+--> 10 -strtok
+بتقسم استرينج كبير ل سترينج صغير 
